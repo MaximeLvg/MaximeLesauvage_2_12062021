@@ -26,3 +26,25 @@ nav ul {
 nav li {
     margin: 0 10px 0  20px;
 }
+
+#barre {
+    display: flex;
+}
+
+/* sections Main */
+
+#Hébergements_Les_plus_populaires {
+    display: flex;
+}
+
+#ArticlesHébergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
