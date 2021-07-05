@@ -1,4 +1,28 @@
-.italic
-{
-    font-style: italic-;
+body {
+    font-family: Raleway;
+}
+.bold {
+    font-weight: bold;
+    font-size: 1.2;
+}
+.fas {
+    color: #0065FC;
+}
+.vide {
+    color: #F2F2F2;
+}
+img {
+    height: 200px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li {
+    margin: 0 10px 0  20px;
 }
