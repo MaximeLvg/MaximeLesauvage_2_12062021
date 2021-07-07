@@ -1,5 +1,8 @@
 body {
     font-family: Raleway;
+    margin: 0;
+    max-width: 1350px;
+    margin: auto;
 }
 .bold {
     font-weight: bold;
@@ -35,16 +38,87 @@ nav li {
 
 #Hébergements_Les_plus_populaires {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
 }
 
-#ArticlesHébergements {
+#Hébergements_à_Marseille {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 44px 36px 44px 36px;
+    max-width: 805px;
+    max-height: 635px;
+}
+
+.titre_hébergements {
+    margin-bottom: 20px;
+}
+
+.contenuHébergements {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 60%
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 
-img {
-    height: 200px;
-    width: 300px;
+.contenu_hébergements {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px;
+    padding: 5px 5 px 10px 5px;
+    max-width: 235px;
+    margin-bottom: 28px;
 }
+
+.photos_hébergements {
+    object-fit: cover;
+    width: 235px;
+    height: 112px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#Les_Plus_Populaires {
+    background-color: #F2F2F2;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 45px 38px 31px 45px;
+    max-width: 345px;
+    max-height: 645px;
+}
+
+.titre_Les_Plus_Populaires {
+    display: flex;
+}
+
+.contenu_Les_Plus_Populaires {
+    background-color: white;
+    display: flex;
+    border: 3px;
+    border-radius: 20px;
+    padding: 6px 58px 6px 6px;
+    max-width: 285px;
+    max-height: 135px;
+    margin-bottom: 30px;
+}
+
+.photos_Les_Plus_Populaires {
+    object-fit: cover;
+    width: 132px;
+    height: 132px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.nom_prix_étoiles2 {
+    padding: 7px 0px 7px 19px;
+}
+
+
+
+
+
+
