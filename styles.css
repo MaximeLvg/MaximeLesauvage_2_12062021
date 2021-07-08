@@ -34,7 +34,7 @@ nav li {
     display: flex;
 }
 
-/* sections Main */
+/* section hébergements à Marseille */
 
 #Hébergements_Les_plus_populaires {
     display: flex;
@@ -81,6 +81,10 @@ nav li {
     border-top-right-radius: 10px;
 }
 
+/* section hébergements à Marseille */
+
+/* section Les Plus Populaires */
+
 #Les_Plus_Populaires {
     background-color: #F2F2F2;
     flex-direction: column;
@@ -115,7 +119,41 @@ nav li {
 
 .nom_prix_étoiles2 {
     padding: 7px 0px 7px 19px;
+} 
+
+/* section Les Plus Populaires */
+
+/* section Activités à Marseille */
+
+.Activités_à_Marseille {
+    margin-bottom: 60px;
+    flex-direction: column;
 }
+
+.Activités {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Activité1, .Activité2, .Activité3, .Activité4, .Activité5, .Activité6 {
+    padding: 0 0 20px 0;
+    border-radius: 20px;
+    margin: 0 0 20px 0;
+    box-shadow: 0 0 20px #0000002e;
+}
+
+#Activités_à_Marseille h2 {
+    font-size: medium;
+}
+
+.photo_Activité1, .photo_Activité2, .photo_Activité3, .photo_Activité4 .photo_Activité5, .photo_Activité6 {
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0px 0px 22px 0px;
+}
+
+
 
 
 
