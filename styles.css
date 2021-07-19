@@ -21,10 +21,6 @@ img {
     height: 200px;
 }
 
-.header {
-    padding: 40px 0;
-}
-
 .logo {
     height: 60px;
     width: 100px;
@@ -45,29 +41,47 @@ nav li {
     margin: 0 10px 0  20px;
 }
 
+.titre_recherche {
+    margin-bottom: 0.5rem;
+}
+
+.p_recherche {
+    margin-top: 0;
+}
+
 .barre_de_recherche {
-    display: flex;
-    height: 40px;
+    display: inline-flex;
+    margin-bottom: 2rem;
 }
 
 .icone_barre_de_recherche {
-    position: relative;
-    height: 40px;
     background-color: #F2F2F2;
-    width: 45px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+
+.recherche_lieu {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .bouton_rechercher {
     background-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    width: 8%;
-    height: 40px;
-    border: none;
     color: white;
     font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .partie_filtres {
@@ -104,10 +118,27 @@ nav li {
     font-weight: bold;
 }
 
-.partie_logement {
+.résultat_recherche {
     display: flex;
     align-items: center;
-    margin: 20px 0 -25px 0px;
+    margin: 1.3rem 0 2rem 0;
+}
+
+.icone_résultat {
+    height: 2rem;
+    width: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.p_résultat_recherche {
+    margin: 0;
 }
 
 /* section hébergements à Marseille */
@@ -124,28 +155,28 @@ nav li {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;
-    padding: 44px 36px 44px 36px;
+    padding: 0px 35px 0px 35px;
     width: 61%;
 }
 
 .titre_hébergements {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 .contenuHébergements {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 60px;
 }
 
 .contenu_hébergements {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 3px;
-    padding: 5px 5 px 10px 5px;
+    padding: 5px 5px 0 5px;
     max-width: 235px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .nom_prix_étoiles {
@@ -160,6 +191,10 @@ nav li {
     border-top-right-radius: 10px;
 }
 
+.p_hébergement {
+
+}
+
 /* section hébergements à Marseille */
 
 /* section Les Plus Populaires */
@@ -168,7 +203,7 @@ nav li {
     background-color: #F2F2F2;
     flex-direction: column;
     border-radius: 20px;
-    padding: 45px 32px 31px 32px;
+    padding: 0px 30px 19px 30px;
     width: 26%;
 }
 
@@ -176,6 +211,11 @@ nav li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0 10px 0;
+}
+
+.contenuLesPlusPopulaires {
+    height: 84%;
 }
 
 .contenu_Les_Plus_Populaires {
@@ -286,14 +326,17 @@ nav li {
 .footer {
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-evenly;
-    padding: 48px 20px 51px 50px;
+    justify-content: flex-start;
 }
 
+.a_propos {
+    width: 31%;
+}
 
+.Nos_hébergements {
+    width: 31%;
+}
 
-
-
-
-
-
+.assistance {
+    width: 31%;
+}
