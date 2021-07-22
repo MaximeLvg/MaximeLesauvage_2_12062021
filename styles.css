@@ -343,13 +343,6 @@ main {
     font-size: medium;
 }
 
-.photo_activite {
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
 .photo_Activite {
     height: 485px;
     width: 100%;
