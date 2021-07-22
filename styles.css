@@ -11,6 +11,11 @@ body {
     color: #0065FC;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .vide {
     color: #F2F2F2;
 }
@@ -37,19 +42,31 @@ header {
 
 .Nav {
     display: flex;
-    
 }
 
-.lien_hébergements {
-    
+.barrenav {
+    padding-top: 33px;
 }
 
-.lien_actvités {
-   
+.lien_nav {
+    padding: 2rem;
+    font-weight: 500;
+    text-align: center;
+    transition-duration: 0.1s;
+    border-top: 3px transparent solid;
+    border-bottom: 3px transparent solid;
+}
+
+.lien_nav[data-active=true] {
+    color: #0065FC;
 }
 
 .lien_sinscrire {
-    
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 600;
 }
 
 .titre_recherche {
@@ -133,13 +150,13 @@ header {
     font-weight: bold;
 }
 
-.résultat_recherche {
+.resultat_recherche {
     display: flex;
     align-items: center;
     margin: 1.3rem 0 2rem 0;
 }
 
-.icone_résultat {
+.icone_resultat {
     height: 1.5rem;
     width: 1.5rem;
     min-height: 1.5rem;
@@ -152,7 +169,7 @@ header {
     margin-right: 1rem;
 }
 
-.p_résultat_recherche {
+.p_resultat_recherche {
     margin: 0;
 }
 
@@ -163,13 +180,13 @@ main {
     margin: auto;
 }
 
-#Hébergements_Les_plus_populaires {
+#Hebergements_Les_plus_populaires {
     display: flex;
     justify-content: space-between;
     margin-bottom: 55px;
 }
 
-#Hébergements_à_Marseille {
+#Hebergements_a_Marseille {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
@@ -179,19 +196,19 @@ main {
     width: 62%;
 }
 
-.titre_hébergements {
+.titre_hebergements {
     margin-bottom: 26px;
     margin-top: 40px;
 }
 
-.contenuHébergements {
+.contenuHebergements {
     display: flex;
     margin-top: 0;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contenuHébergements p {
+.contenuHebergements p {
     margin: 0;
 }
 
@@ -201,7 +218,7 @@ main {
     font-size: 1.1rem;
 }
 
-.contenu_hébergements {
+.contenu_hebergements {
     background-color: white;
     border-radius: 15px;
     border: 3px;
@@ -209,11 +226,10 @@ main {
     width: 30%;
     height: 195px;
     margin-bottom: 30px;
-    text-decoration: none;
-    color: inherit;
+    
 }
 
-.nom_prix_étoiles {
+.nom_prix_etoiles {
     padding: 0 15px 12px;
 }
 
@@ -222,16 +238,22 @@ main {
     margin-top: 5px;
 }
 
-.étoiles {
+.etoiles {
     margin-top: 3px;
 }
 
-.photos_hébergements {
+.photos_hebergements {
     object-fit: cover;
     width: 100%;
     height: 112px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+.pp {
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* section hébergements à Marseille */
@@ -270,8 +292,6 @@ main {
     margin-bottom: 30px;
     height: 29%;
     padding: 5px;
-    text-decoration: none;
-    color: inherit;
 }
 
 .photos_Les_Plus_Populaires {
@@ -282,7 +302,7 @@ main {
     border-bottom-left-radius: 10px;
 }
 
-.nom_prix_étoiles2 {
+.nom_prix_etoiles2 {
     padding: 0px 0px 7px 19px;
     display: flex;
     flex-direction: column;
@@ -295,44 +315,42 @@ main {
 
 /* section Activités à Marseille */
 
-#Activités_à_Marseille {
+#Activites_a_Marseille {
     margin-bottom: 40px;
     max-width: 1350px;
     margin: auto;
 }
 
-.activité_caulomn {
+.activite_caulomn {
     width: 23%;
     display: flex;
     flex-direction: column;
 }
 
-.Activités {
+.Activites {
     display: flex;
     justify-content: space-between;
 }
 
-.Activité1, .Activité2, .Activité3, .Activité4, .Activité5, .Activité6 {
+.Activite1, .Activite2, .Activite3, .Activite4, .Activite5, .Activite6 {
     padding: 0 0 20px 0;
     border-radius: 20px;
     margin: 0 0 20px 0;
     box-shadow: 0 0 20px #0000002e;
-    text-decoration: none;
-    color: inherit;
 }
 
-#Activités_à_Marseille h2 {
+#Activites_a_Marseille h2 {
     font-size: medium;
 }
 
-.photo_activité {
+.photo_activite {
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.photo_Activité {
+.photo_Activite {
     height: 485px;
     width: 100%;
     object-fit: cover;
@@ -340,7 +358,7 @@ main {
     border-top-left-radius: 20px;
 }
 
-.photo_activité2 {
+.photo_activite2 {
     height: 252px;
     width: 100%;
     object-fit: cover;
@@ -348,7 +366,7 @@ main {
     border-top-left-radius: 20px;
 }
 
-.photo_activité3 {
+.photo_activite3 {
     height: 164px;
     width: 100%;
     object-fit: cover;
@@ -356,7 +374,7 @@ main {
     border-top-left-radius: 20px;
 }
 
-.photo_activité5 {
+.photo_activite5 {
     height: 164px;
     width: 100%;
     object-fit: cover;
@@ -364,7 +382,7 @@ main {
     border-top-left-radius: 20px;
 }
 
-.photo_activité6 {
+.photo_activite6 {
     height: 247px;
     width: 100%;
     object-fit: cover;
@@ -372,35 +390,35 @@ main {
     border-top-left-radius: 20px;
 }
 
-.activité1_bis {
+.activite1_bis {
     height: 517px;
 }
 
-.activité2_bis {
+.activite2_bis {
     height: 281px;
 }
 
-.activité3_bis {
+.activite3_bis {
     height: 197px;
 }
 
-.activité4_bis {
+.activite4_bis {
     height: 517px;
 }
 
-.activité5_bis {
+.activite5_bis {
     height: 198px;
 }
 
-.activité6_bis {
+.activite6_bis {
     height: 280px;
 }
 
-.nom_Activité {
+.nom_Activite {
     margin: 15px 0 15px 15px;
 }
 
-#Activités_à_Marseille p {
+#Activites_a_Marseille p {
     margin: 0;
 }
 
@@ -422,7 +440,7 @@ footer {
     width: 31%;
 }
 
-.Nos_hébergements {
+.Nos_hebergements {
     width: 31%;
 }
 
