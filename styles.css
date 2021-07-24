@@ -432,7 +432,7 @@ footer {
 .bas_de_page {
     display: flex;
     background-color: #F2F2F2;
-    padding: 30px 0px 33px 136px;
+    padding: 2rem 16.5rem;
 }
 
 .a_propos {
