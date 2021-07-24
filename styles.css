@@ -125,6 +125,10 @@ header {
     display: flex;
 }
 
+.filtre:hover {
+    background-color: #d9d9d9ee;
+}
+
 .filtre {
     display: flex;
     margin-left: 35px;
@@ -330,6 +334,7 @@ main {
 .Activites {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 45px;
 }
 
 .Activite1, .Activite2, .Activite3, .Activite4, .Activite5, .Activite6 {
@@ -426,7 +431,7 @@ footer {
 .bas_de_page {
     display: flex;
     background-color: #F2F2F2;
-    padding: 30px 0px 33px 57px;
+    padding: 30px 0px 33px 136px;
 }
 
 .a_propos {
