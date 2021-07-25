@@ -120,6 +120,7 @@ header {
 .partie_filtres {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .filtres {
@@ -136,6 +137,9 @@ header {
     border: 2px solid #d9d9d9;
     border-radius: 25px;
     height: 50px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
 }
 
 .icone_filtre {
@@ -445,4 +449,112 @@ footer {
 
 .assistance {
     width: 31%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 650px) {
+    body {
+        width: auto;
+    }
+
+    .header {
+        width: 95%;
+    }
+
+    .barrenav {
+
+    }
+
+    .lien_nav {
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+    }
+
+    .lien_nav[data-active=true] {
+        border-bottom: solid 3px;
+        border-top: none;
+    }
+    
+    .barre_de_recherche {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .recherche_lieu {
+        flex: 1;
+    }
+
+    .text_bouton_rechercher {
+        display: none;
+    }
+
+    .filtre {
+        margin-bottom: 15px;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
+        margin-left: -40px;
+    }
+
+    #Hebergements_Les_plus_populaires {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    #Les_Plus_Populaires {
+        width: auto;
+        padding: 0px 20px 20px 20px;
+        border-radius: 0;
+    }
+
+    .photos_Les_Plus_Populaires {
+        height: auto;
+    }
+
+    .contenu_Les_Plus_Populaires {
+        height: 150px;
+    }
+
+    #Hebergements_a_Marseille {
+        background-color: #FFF;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contenu_hebergements {
+        width: 100%;
+        box-shadow: 0 0 20px #0000002e;
+        margin-bottom: 15px;
+        height: 200px;
+    }
+
+    .Activites {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activite_caulomn {
+        width: 100%;
+    }
+
+    .photo_Activite, .photo_activite2, .photo_activite3, .photo_activite5, .photo_activite6 {
+        height: 160px;
+    }
+
+    .Activite1, .Activite2, .Activite3, .Activite4, .Activite5, .Activite6 {
+        height: 200px;
+    }
+
+    .bas_de_page {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px 0px 35px 30px;
+    }
+
+    .a_propos, .Nos_hebergements, .Assistance {
+        width: 100%;
+    }
 }
