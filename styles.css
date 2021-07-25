@@ -16,6 +16,12 @@ a {
     color: inherit;
 }
 
+h3 {
+    margin: 0;
+    margin-bottom: 3px;
+    margin-top: 5px;
+}
+
 .vide {
     color: #F2F2F2;
 }
@@ -121,8 +127,8 @@ header {
     display: none;
 }
 
-.loupe {
-    color: #FFF;
+.icone_loupe {
+    display: none;
 }
 
 .partie_filtres {
@@ -250,9 +256,8 @@ main {
     padding: 0 15px 12px;
 }
 
-.nom {
-    margin-bottom: 3px;
-    margin-top: 5px;
+.article1 {
+    font-size: 17px;
 }
 
 .etoiles {
@@ -429,7 +434,7 @@ main {
     height: 280px;
 }
 
-.nom_Activite {
+.Activites h3 {
     margin: 15px 0 15px 15px;
 }
 
@@ -448,7 +453,7 @@ footer {
 .bas_de_page {
     display: flex;
     background-color: #F2F2F2;
-    padding: 2rem 16.5rem;
+    padding: 2rem 2.5rem;
 }
 
 .a_propos {
@@ -465,7 +470,7 @@ footer {
 
 /* media queries */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 425px) {
     body {
         width: auto;
     }
@@ -478,6 +483,12 @@ footer {
         display: flex;
     }
 
+    .logo_nav {
+        display: flex;
+        width: auto;
+        flex-flow: wrap;
+    }
+
     .lien_nav {
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
@@ -486,6 +497,10 @@ footer {
     .lien_nav[data-active=true] {
         border-bottom: solid 3px;
         border-top: none;
+    }
+
+    .lien_sinscrire {
+        margin-top: -170px;
     }
     
     .barre_de_recherche {
@@ -499,6 +514,14 @@ footer {
 
     .text_bouton_rechercher {
         display: none;
+    }
+
+    .icone_loupe {
+        display: flex;
+    }
+
+    .loupe_icone {
+        color: inherit;
     }
 
     .filtre {
@@ -575,9 +598,15 @@ footer {
     }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1023px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
     .header {
-        width: 96%;
+        width: 89%;
+        margin-left: 15px;
+    }
+
+    main {
+        width: 95%;
+        margin-left: -10px;
     }
 
     .lien_sinscrire {
@@ -588,6 +617,14 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    .filtre {
+        margin-top: 10px;
     }
 
     #Hebergements_Les_plus_populaires {
@@ -628,7 +665,8 @@ footer {
     }
 
     .contenu_hebergements {
-        height: 207px;
+        height: 194px;
+        width: 47%;
     }
 
     #Activites_a_Marseille {
@@ -637,22 +675,43 @@ footer {
     .Activites {
         display: flex;
         flex-wrap: wrap;
+        justify-content: inherit;
+    }
+
+    .activite_caulomn {
+        width: 34%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Activite2, .Activite5 {
+        margin-right: 14px;
+    }
+
+    .activite2_bis, .activite3_bis, .activite5_bis, .activite6_bis {
+        width: 220px;
     }
 
     .Activite1, .Activite2, .Activite3, .Activite4, .Activite5, .Activite6 {
-        height: 250px;
+        height: 235px;
+        width: 220px;
     }
 
     .photo_Activite, .photo_activite2, .photo_activite3, .photo_activite5, .photo_activite6 {
         height: 200px;
     }
 
+    .Activite4 h3, .Activite5 h3 {
+        margin-top: 0;
+    }
+
     footer {
-        width: 100%;
+        width: 95%;
+        margin-left: -7px;
     }
     .bas_de_page {
         display: flex;
-    justify-content: space-between;
-    padding: 2rem 3rem;
+        justify-content: space-between;
+        padding: 2rem 3rem;
     }
 }
