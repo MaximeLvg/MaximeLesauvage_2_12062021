@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles.css">
@@ -7,20 +7,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/69f5cddb0f.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="title" content="Reservia"/>
+        <title>site Reservia</title>
     </head>
     <body>
         <!-- Header -->
         <header class="header">
             <div class="logo_nav">
                 <img class="logo" src="images/logo/Reservia@3x.png" alt="logo Reservia">
-                
+                <div class="nav">
                     <nav class="barrenav">
                         <a class="lien_nav" href="#Hebergements_Les_plus_populaires" data-active="true">Hébergements</a>
                         <a class="lien_nav" href="Activites_a_Marseille" data-active="false">Activités</a>
                     </nav>
                     <a class="lien_sinscrire" href="#">S'inscrire</a>
-                
+                </div>        
             </div>
             <section id="header">
                 <div>
@@ -29,12 +29,12 @@
                 </div>
                 <form class="barre_de_recherche" action="proceedFrom.html" method="GET">
                     <span class="icone_barre_de_recherche">
-                      <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
+                      <i class="fas fa-map-marker-alt searchFormWrapiconIcon point_icone"></i>
                     </span>
-                    <input class="recherche_lieu" type="recherche" placeholder="Marseille, France" size="1">
+                    <input class="recherche_lieu" type="search" placeholder="Marseille, France" size="1">
                     <button class="bouton_rechercher">
                       <span class="text_bouton_rechercher">Rechercher</span>
-                      <i class="searchFormSubmitinputIcon fas fa-search" aria-hidden="true"></i>
+                      <i class="fas fa-search  " aria-hidden="true"></i>
                     </button>
                 </form>
                 <div class="partie_filtres">
@@ -165,7 +165,7 @@
                         <a class="contenu_hebergements" href="#">           
                             <article>                           
                                 <img class="photos_hebergements" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="photo de la chambre">
-                                <div class="nom_prix_étoiles">
+                                <div class="nom_prix_etoiles">
                                     <div class="nom">
                                         <p class="bold">Auberge Le Panier</p>
                                     </div>    
@@ -208,7 +208,7 @@
                 <section id="Les_Plus_Populaires">
                     <div class="titre_Les_Plus_Populaires">
                         <h2>Les plus populaires</h2>
-                        <a href="#"><i class="fas fa-chart-line"></i></a>
+                        <i class="fas fa-chart-line graph_icone"></i>
                     </div>
                     <div class="contenuLesPlusPopulaires">
                         <a href="#">
@@ -234,7 +234,7 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class="contenu_Les_Plus_Populaires">
+                            <article class="contenu_Les_Plus_Populaires2">
                                 <img class="photos_Les_Plus_Populaires" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo de la chambre">
                                 <div class="nom_prix_etoiles2">
                                     <div class="nom_prix">
