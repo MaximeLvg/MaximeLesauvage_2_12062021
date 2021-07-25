@@ -600,13 +600,11 @@ footer {
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .header {
-        width: 89%;
-        margin-left: 15px;
+        width: 100%;
     }
 
     main {
-        width: 95%;
-        margin-left: -10px;
+        width: 100%;
     }
 
     .lien_sinscrire {
@@ -706,7 +704,7 @@ footer {
     }
 
     footer {
-        width: 95%;
+        width: 100%;
         margin-left: -7px;
     }
     .bas_de_page {
