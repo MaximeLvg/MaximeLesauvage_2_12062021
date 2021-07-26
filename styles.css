@@ -127,7 +127,7 @@ header {
     display: none;
 }
 
-.icone_loupe {
+.bouton_rechercher i {
     display: none;
 }
 
@@ -501,6 +501,7 @@ footer {
 
     .lien_sinscrire {
         margin-top: -170px;
+        padding: inherit;
     }
     
     .barre_de_recherche {
@@ -516,12 +517,9 @@ footer {
         display: none;
     }
 
-    .icone_loupe {
+    .bouton_rechercher i {
         display: flex;
-    }
-
-    .loupe_icone {
-        color: inherit;
+        color: #FFF;
     }
 
     .filtre {
@@ -634,26 +632,39 @@ footer {
 
     .photos_Les_Plus_Populaires {
         height: auto;
-        width: 100px;
+        width: 125px;
+    }
+
+    .box1, .box2 {
+        width: 50%;
+    }
+
+    .box3 {
+        width: 95%;
+        margin-left: 25px;
+    }
+
+    .box3 img {
+        width: 250px;
     }
 
     #Les_Plus_Populaires {
         width: auto;
         margin-bottom: 35px;
-        padding-left: 20px;
     }
 
     .contenuLesPlusPopulaires {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .contenu_Les_Plus_Populaires {
-        width: 100%;
+        width: 97%;
         height: 160px;
     }
 
     .contenu_Les_Plus_Populaires2 {
-        width: 86%;
+        width: 94%;
         margin-left: 21px;
         height: 160px;
     }
