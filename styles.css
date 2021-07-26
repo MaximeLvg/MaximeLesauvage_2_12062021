@@ -477,10 +477,12 @@ footer {
 
     .header {
         width: 95%;
+        margin: 0;
     }
 
     .barrenav {
         display: flex;
+        margin-left: -13px;
     }
 
     .logo_nav {
@@ -492,6 +494,7 @@ footer {
     .lien_nav {
         border-bottom: 3px solid #F2F2F2;
         width: 50%;
+        padding: 1.5rem;
     }
 
     .lien_nav[data-active=true] {
